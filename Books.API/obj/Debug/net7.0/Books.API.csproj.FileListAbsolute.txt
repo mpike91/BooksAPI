@@ -74,3 +74,4 @@ C:\Users\Mattp\OneDrive\Documents\_CODING\Csharp\Books\Books.API\obj\Debug\net7.
 C:\Users\Mattp\OneDrive\Documents\_CODING\Csharp\Books\Books.API\obj\Debug\net7.0\Books.API.pdb
 C:\Users\Mattp\OneDrive\Documents\_CODING\Csharp\Books\Books.API\obj\Debug\net7.0\Books.API.genruntimeconfig.cache
 C:\Users\Mattp\OneDrive\Documents\_CODING\Csharp\Books\Books.API\obj\Debug\net7.0\ref\Books.API.dll
+C:\Users\Mattp\OneDrive\Documents\_CODING\Csharp\Books\Books.API\obj\Debug\net7.0\Books.API.sourcelink.json

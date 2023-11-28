@@ -1,7 +1,22 @@
 using Books.API.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Net.Http.Headers;
+
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      policy =>
+                      {
+                          policy.WithOrigins("http://localhost:5173", "https://localhost:5173")
+                              .WithHeaders(HeaderNames.ContentType)
+                              .WithMethods("PUT", "DELETE");
+
+                      });
+});
 
 // Add services to the container.
 
@@ -22,7 +37,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 
