@@ -37,6 +37,7 @@ namespace Books.API.Controllers
                     Id = bookDomain.Id,
                     Title = bookDomain.Title,
                     Author = bookDomain.Author,
+                    DatePublished = bookDomain.DatePublished,
                     ImageUrl = bookDomain.ImageUrl,
                     PageLength = bookDomain.PageLength,
                 });
@@ -66,6 +67,7 @@ namespace Books.API.Controllers
                 Id = bookDomain.Id,
                 Title = bookDomain.Title,
                 Author = bookDomain.Author,
+                DatePublished = bookDomain.DatePublished,
                 ImageUrl = bookDomain.ImageUrl,
                 PageLength = bookDomain.PageLength
             };
@@ -84,6 +86,7 @@ namespace Books.API.Controllers
             {
                 Title = addBookRequestDto.Title,
                 Author = addBookRequestDto.Author,
+                DatePublished = addBookRequestDto.DatePublished,
                 ImageUrl = addBookRequestDto.ImageUrl,
                 PageLength = addBookRequestDto.PageLength,
             };
@@ -100,6 +103,7 @@ namespace Books.API.Controllers
                 Id = bookDomainModel.Id,
                 Title = bookDomainModel.Title,
                 Author = bookDomainModel.Author,
+                DatePublished = bookDomainModel.DatePublished,
                 ImageUrl = bookDomainModel.ImageUrl,
                 PageLength = bookDomainModel.PageLength,
             };
@@ -124,6 +128,7 @@ namespace Books.API.Controllers
             // Update Book Domain Model from DTO's values
             bookDomainModel.Title = updateBookRequestDto.Title;
             bookDomainModel.Author = updateBookRequestDto.Author;
+            bookDomainModel.DatePublished = updateBookRequestDto.DatePublished;
             bookDomainModel.ImageUrl = updateBookRequestDto.ImageUrl;
             bookDomainModel.PageLength = updateBookRequestDto.PageLength;
 
@@ -135,6 +140,7 @@ namespace Books.API.Controllers
                 Id = bookDomainModel.Id,
                 Title = bookDomainModel.Title,
                 Author = bookDomainModel.Author,
+                DatePublished = bookDomainModel.DatePublished,
                 ImageUrl = bookDomainModel.ImageUrl,
                 PageLength = bookDomainModel.PageLength,
             };
